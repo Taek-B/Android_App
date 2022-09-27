@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TwoFragment">
+
+    <ImageView
+        android:id="@+id/page2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/page2" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/page2"
+        android:layout_alignTop="@id/page2"
+        android:layout_alignRight="@id/page2"
+        android:layout_alignBottom="@id/page2"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:layout_gravity="left"
+            android:layout_weight="0.1"
+            android:text="Bad Ending"
+            android:textColor="#C3FFFFFF"
+            android:textSize="50sp" />
+
+        <EditText
+            android:id="@+id/fragment_testView"
+            android:layout_width="wrap_content"
+            android:layout_height="298dp"
+            android:layout_weight="4"
+            android:background="@null"
+            android:focusable="false"
+            android:gravity="center"
+            android:maxLines="10"
+            android:text="@string/DIED"
+            android:textColor="#869299"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/again"
+                android:layout_width="300dp"
+                android:layout_height="45dp"
+                android:layout_marginBottom="10dp"
+
+                android:text="다시하기"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/goMenu"
+                android:layout_width="300dp"
+                android:layout_height="45dp"
+                android:layout_marginBottom="10dp"
+
+                android:text="메인메뉴"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

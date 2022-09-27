@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Android1</string>
+    <string name="drawer_closed">Close</string>
+    <string name="drawer_opened">Open</string>
+    <string name="exp_story">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis ut velit ac maximus. Ut vitae tellus urna. Quisque faucibus maximus turpis nec dapibus. Vivamus at dolor neque. Fusce iaculis porta ultricies. Curabitur ornare leo vel ligula gravida, sit amet dictum ligula iaculis. Donec non lorem ut sem venenatis iaculis id at libero. Mauris dignissim turpis at risus bibendum, vitae fringilla elit auctor. Cras tempor eleifend purus, quis feugiat velit molestie eget. Phasellus cursus gravida neque vitae condimentum. Sed nulla quam, dictum vel nisl eu, aliquet euismod tellus. Nulla luctus elit velit, rutrum cursus sapien faucibus non. Suspendisse finibus lorem felis, vel iaculis lacus eleifend vitae. Aenean eu sapien pulvinar nunc iaculis laoreet.</string>
+    <string name="DIED">YOU DIED</string>
+</resources>

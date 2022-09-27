@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TwoFragment">
+
+    <ImageView
+        android:id="@+id/page1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/page1" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/page1"
+
+        android:layout_alignTop="@id/page1"
+        android:layout_alignRight="@id/page1"
+        android:layout_alignBottom="@id/page1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:layout_gravity="left"
+            android:layout_weight="0.1"
+            android:text="Story1"
+            android:textColor="#C3FFFFFF"
+            android:textSize="50sp" />
+
+        <EditText
+            android:id="@+id/fragment_testView"
+            android:layout_width="wrap_content"
+            android:layout_height="298dp"
+            android:layout_weight="4"
+            android:background="@null"
+            android:focusable="false"
+            android:gravity="center"
+            android:maxLines="10"
+            android:text="@string/exp_story"
+            android:textColor="#869299"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/help"
+                android:layout_width="300dp"
+                android:layout_height="45dp"
+                android:layout_marginBottom="10dp"
+
+                android:text="도와준다."
+                android:textColor="#292929"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/run"
+                android:layout_width="300dp"
+                android:layout_height="45dp"
+                android:layout_marginBottom="10dp"
+
+                android:text="도망간다."
+                android:textColor="#292929"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
