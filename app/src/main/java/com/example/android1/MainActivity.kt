@@ -1,5 +1,6 @@
 package com.example.android1
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -11,6 +12,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import com.example.android1.databinding.ActivityMainBinding
+import com.example.android1.databinding.FragmentTwoBinding
 
 
 class MainActivity : AppCompatActivity() {
@@ -46,6 +48,47 @@ class MainActivity : AppCompatActivity() {
         //뷰 페이지에 어댑터 적용
         val adapter = MyFragmentPagerAdapter(this)
         binding.viewPager.adapter = adapter
+
+
+
+        //네비게이션 뷰 에서 아이템 선택 이벤트 추가
+        binding.navView.setNavigationItemSelectedListener {
+            when(it.itemId){
+                R.id.menu_story -> {
+                    Log.d("myLog","story 메뉴 선택")
+                    val intent = Intent(this, userActivity::class.java)
+                    startActivity(intent)
+                }
+                R.id.menu_save -> {
+                    val intent = Intent(this, userActivity::class.java)
+                    Log.d("myLog","save 메뉴 선택")
+                    startActivity(intent)
+                }
+                R.id.menu_option -> {
+                    val intent = Intent(this, userActivity::class.java)
+                    Log.d("myLog","option 메뉴 선택")
+                    startActivity(intent)
+                }
+                R.id.menu_user -> {
+                    val intent = Intent(this, userActivity::class.java)
+                    Log.d("myLog","user 메뉴 선택")
+                    startActivity(intent)
+                }
+                R.id.menu_info-> {
+                    val intent = Intent(this, userActivity::class.java)
+                    Log.d("myLog","info 메뉴 선택")
+                    startActivity(intent)
+                }
+            }
+            true
+        }
+
+        //페이지로 이동
+        binding.navView.setOnClickListener {
+            val intent = Intent(this,userActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 
     //메뉴생성한 레이아웃을 구현
@@ -70,7 +113,6 @@ class MainActivity : AppCompatActivity() {
         return true
     }
 
-
     //토글버튼 클릭시 이벤트
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         // 이벤트가 토글 버튼에서 발생하면면
@@ -80,4 +122,6 @@ class MainActivity : AppCompatActivity() {
         }
         return super.onOptionsItemSelected(item)
     }
+
 }
+

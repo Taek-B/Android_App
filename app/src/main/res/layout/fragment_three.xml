@@ -4,21 +4,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".TwoFragment">
+    tools:context=".ThreeFragment">
 
     <ImageView
-        android:id="@+id/page2"
+        android:id="@+id/p1_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/page2" />
+        android:src="@drawable/p1_2" />
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@id/page2"
-        android:layout_alignTop="@id/page2"
-        android:layout_alignRight="@id/page2"
-        android:layout_alignBottom="@id/page2"
+        android:layout_alignLeft="@id/p1_2"
+
+        android:layout_alignTop="@id/p1_2"
+        android:layout_alignRight="@id/p1_2"
+        android:layout_alignBottom="@id/p1_2"
         android:gravity="center"
         android:orientation="vertical">
 
@@ -27,7 +28,7 @@
             android:layout_height="120dp"
             android:layout_gravity="left"
             android:layout_weight="0.1"
-            android:text="Bad Ending"
+            android:text="Story1(2)"
             android:textColor="#C3FFFFFF"
             android:textSize="50sp" />
 
@@ -40,9 +41,9 @@
             android:focusable="false"
             android:gravity="center"
             android:maxLines="10"
-            android:text="@string/DIED"
+            android:text="@string/exp_story"
             android:textColor="#869299"
-            android:textSize="50sp"
+            android:textSize="18sp"
             android:textStyle="bold" />
 
         <LinearLayout
@@ -52,24 +53,35 @@
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/again"
+                android:id="@+id/help"
                 android:layout_width="300dp"
                 android:layout_height="45dp"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="5dp"
 
-                android:text="다시하기"
+                android:text="싸운다."
                 android:textColor="#FFFFFF"
                 android:textSize="15sp"
                 android:textStyle="bold" />
 
             <Button
-                android:id="@+id/goMenu"
+                android:id="@+id/run"
                 android:layout_width="300dp"
                 android:layout_height="45dp"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="5dp"
 
-                android:text="메인메뉴"
+                android:text="도망간다."
                 android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="300dp"
+                android:layout_height="45dp"
+                android:layout_marginBottom="5dp"
+
+                android:text="유인한다"
+                android:textColor="#292929"
                 android:textSize="15sp"
                 android:textStyle="bold" />
 

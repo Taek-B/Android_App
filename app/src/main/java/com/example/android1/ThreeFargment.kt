@@ -1,11 +1,14 @@
 package com.example.android1
 
+import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.android1.databinding.FragmentThreeBinding
+import com.example.android1.databinding.FragmentTwoBinding
 
 
 class ThreeFragment : Fragment() {
@@ -16,10 +19,25 @@ class ThreeFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val binding = FragmentThreeBinding.inflate(inflater, container, false)
+
+        binding.help.setOnClickListener {
+            activity?.let{
+                val intent = Intent(context, BadEnd1Activity::class.java)
+                startActivity(intent)
+            }
+        }
+        binding.run.setOnClickListener {
+            activity?.let{
+                val intent = Intent(context, BadEnd1Activity::class.java)
+                startActivity(intent)
+            }
+        }
+
         return binding.root
     }
 
 }
+
 
 
 

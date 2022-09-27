@@ -2,19 +2,23 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/menu_item1"
+        android:id="@+id/menu_story"
         android:icon="@drawable/story"
         android:title="StoryList" />
     <item
-        android:id="@+id/menu_item2"
+        android:id="@+id/menu_save"
         android:icon="@drawable/save"
         android:title="Savepoint" />
     <item
-        android:id="@+id/menu_item3"
+        android:id="@+id/menu_option"
         android:icon="@drawable/option"
         android:title="설정" />
     <item
-        android:id="@+id/menu_item4"
+        android:id="@+id/menu_user"
         android:icon="@drawable/user"
         android:title="계정" />
+    <item
+        android:id="@+id/menu_info"
+        android:icon="@drawable/icon_info"
+        android:title="정보" />
 </menu>

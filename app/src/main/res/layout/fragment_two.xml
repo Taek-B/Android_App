@@ -10,7 +10,7 @@
         android:id="@+id/page1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/page1" />
+        android:src="@drawable/p1_1" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -28,7 +28,7 @@
             android:layout_height="120dp"
             android:layout_gravity="left"
             android:layout_weight="0.1"
-            android:text="Story1"
+            android:text="Story1(1)"
             android:textColor="#C3FFFFFF"
             android:textSize="50sp" />
 
@@ -56,10 +56,10 @@
                 android:id="@+id/help"
                 android:layout_width="300dp"
                 android:layout_height="45dp"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="5dp"
 
-                android:text="도와준다."
-                android:textColor="#292929"
+                android:text="싸운다."
+                android:textColor="#FFFFFF"
                 android:textSize="15sp"
                 android:textStyle="bold" />
 
@@ -67,9 +67,20 @@
                 android:id="@+id/run"
                 android:layout_width="300dp"
                 android:layout_height="45dp"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="5dp"
 
                 android:text="도망간다."
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="300dp"
+                android:layout_height="45dp"
+                android:layout_marginBottom="5dp"
+
+                android:text="숨는다."
                 android:textColor="#292929"
                 android:textSize="15sp"
                 android:textStyle="bold" />
